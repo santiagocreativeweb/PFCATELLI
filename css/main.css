@@ -101,7 +101,7 @@ li a:hover{
   }
   li a:hover, li a.active{
       background: none;
-      color: #2c3e50;
+      color: #0084ff;
   }
   #check:checked ~ ul{
       left:0;
@@ -109,17 +109,17 @@ li a:hover{
 }
 
 
-@media (max-width: 425px){
+@media (max-width: 428px){
   .checkbtn{
       display: block;
   }
   ul{
       position: fixed;
-      width: 425px;
+      width: 428px;
       height: 100%;
       background: #2c3e50;
       top: 80px;
-      left: -100%;
+      left: -101%;
       text-align: center;
       transition: all .5s;
   }
@@ -138,6 +138,69 @@ li a:hover{
   #check:checked ~ ul{
       left: 0;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .checkbtn{
+    display: block;
+}
+ul{
+    position: fixed;
+    width: 320px !important;
+    height: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+li a:hover, li a.active{
+    background: none;
+    color: #0084ff;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+}
+
+/* IPHONE 12/13 */
+@media screen and (max-width: 428px) {
+  .checkbtn{
+    display: block;
+}
+ul{
+    position: fixed;
+    width: 428px;
+    height: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+li a:hover, li a.active{
+    background: none;
+    color: #0084ff;
+}
+#check:checked ~ ul{
+    left: 0;
+}
 }
 
 /* NOSOTROS*/
@@ -217,11 +280,30 @@ li a:hover{
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 320px) {
   .section1 {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 425px;
+    width: 320px !important;
+    height: 724px;
+    text-decoration: none;
+  }
+  .bienvenida {
+  display: inline-block;
+  padding-right: 100%;
+}
+.losted {
+  width: 200px !important;
+  padding-right: 10px;
+}
+
+}
+
+@media screen and (max-width: 428px) {
+  .section1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 428px;
     height: 724px;
     text-decoration: none;
   }
@@ -231,7 +313,7 @@ li a:hover{
 }
 
   .losted {
-    width: 175px;
+    width: 275px;
     padding-right: 10px;
   }
 }
@@ -310,6 +392,10 @@ li a:hover{
   .main {
     padding-top: 20px;
   }
+
+  .main .img-sobre-mi {
+    padding-left: 100px;
+  }
   .main .sobremi-nosotros {
     padding-left: 18px;
     padding-right: 90px;
@@ -326,13 +412,42 @@ li a:hover{
   }
 }
 /* RESPONSIVE MOBILE */
-  @media screen and (max-width: 425px) {  
+
+@media screen and (max-width: 320px) {  
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .img-sobre-mi {
+    width: 320px !important;
+    height: 120;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main .sobremi-nosotros {
+    padding-left: 120px;
+  }
+  .main .sobremi-p {
+    padding-left: 130px;
+    font-size: 17px;
+  }
+  .main .sobremi-sub {
+    padding-left: 130px;
+  }
+  .main .button {
+    margin-left: 130px;
+  }
+
+}
+
+  @media screen and (max-width: 428px) {  
     .main {
       display: flex;
       flex-direction: column;
     }
     .main .img-sobre-mi {
-      width: 425px;
+      width: 428px;
       height: 120;
       padding-top: 0px;
       padding-left: 10px;
@@ -412,12 +527,17 @@ li a:hover{
   }
 }
 /* RESPONSIVE MOBILE */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .servicio {
     width: 100%;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .servicio {
+    width: 100%;
+  }
+}
 /* PRODUCTOS */
 .galeria {
   background-color: white;
@@ -473,14 +593,7 @@ li a:hover{
 }
 .right {
 	padding: 70px 100px;
-	position: relative;
-}
-.right i {
-	position: absolute;
-	font-size: 80px;
-	left: -27px;
-	top: 40%;
-	color: #fff;
+	position: static;
 }
 .form-control {
 	border: 2px solid #000;
