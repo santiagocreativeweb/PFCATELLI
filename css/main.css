@@ -109,13 +109,13 @@ li a:hover{
 }
 
 
-@media (max-width: 320px){
+@media (max-width: 425px){
   .checkbtn{
       display: block;
   }
   ul{
       position: fixed;
-      width: 320px;
+      width: 425px;
       height: 100%;
       background: #2c3e50;
       top: 80px;
@@ -217,11 +217,11 @@ li a:hover{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .section1 {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 320px;
+    width: 425px;
     height: 724px;
     text-decoration: none;
   }
@@ -326,13 +326,13 @@ li a:hover{
   }
 }
 /* RESPONSIVE MOBILE */
-  @media screen and (max-width: 320px) {  
+  @media screen and (max-width: 425px) {  
     .main {
       display: flex;
       flex-direction: column;
     }
     .main .img-sobre-mi {
-      width: 320px;
+      width: 425px;
       height: 120;
       padding-top: 0px;
       padding-left: 10px;
@@ -412,7 +412,7 @@ li a:hover{
   }
 }
 /* RESPONSIVE MOBILE */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .servicio {
     width: 100%;
   }
