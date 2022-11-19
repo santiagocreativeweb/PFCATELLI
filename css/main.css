@@ -1,0 +1,619 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #252525;
+}
+
+/*-------- HEADER --------*/
+/*-------- HEADER --------*/
+
+nav{
+  background: #0c85d65d;
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 10px 15px;
+}
+.losted{
+  height: 90px;
+  width: 350px;
+  padding-bottom: 25px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a:hover{
+  background: #0c85d641;
+  color: white;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/*-------- RESPONSIVE --------*/
+
+@media (max-width: 768px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+
+}
+
+@media (max-width: 768px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: #2c3e50;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+
+
+@media (max-width: 320px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 320px;
+      height: 100%;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: #2c3e50;
+  }
+  #check:checked ~ ul{
+      left: 0;
+  }
+}
+
+/* NOSOTROS*/
+/* SERVICIOS */
+/* PRODUCTOS */
+/* CONTACTO */
+/* FOOTER */
+/* INICIO */
+/* NAVBAR */
+/* OPERACIONES */
+.section1 {
+  background: url("../img/palmeras.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1440px;
+  height: 790px;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 250px;
+  font-weight: 10;
+  font-size: 30px;
+}
+.bienvenida .text1 {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: bold;
+}
+.bienvenida .text2 {
+  color: #fff;
+  font-weight: 1;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.azultext3 {
+  display: inline-block;  
+  color: #0084ff;
+  padding: 10px 0.9em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: rgba(0, 116, 224, 0.3764705882);
+  border-radius: 50px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.azultext2 {
+  color: #00ffbfce;
+  text-decoration: bold;
+  font-weight: 10;
+}
+
+/*-------- RESPONSIVE --------*/
+/* BARRA LATERAL */
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+
+  .section1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 768px;
+    height: 724px;
+    text-decoration: none;
+      }
+
+    .bienvenida {
+      display: inline-block;
+      padding-left: 40px;
+      font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  .section1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 724px;
+    text-decoration: none;
+  }
+  .bienvenida {
+  display: inline-block;
+  padding-right: 100%;
+}
+
+  .losted {
+    width: 175px;
+    padding-right: 10px;
+  }
+}
+/*-------- RESPONSIVE --------*/
+.sobremi {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: white;
+  color: red;
+}
+ 
+.sobremi .sobremi-sub {
+  color: red;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+.sobremi img {
+  height: auto;
+  color: red;
+  width: 430px;
+}
+
+.sobremi-text {
+  width: 550px;
+}
+
+.sobremi-text {
+  color: #191919;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.sobremi-text p {
+  color: #191919;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.sobremi-text h2 {
+  color: #191919;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 9px 25px;
+  background-color: #0084ff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 1s ease 0s;
+  border: 2px solid rgba(0, 0, 0, 0.671);
+} 
+.button:hover {
+  border: 2px solid rgba(0, 132, 255, 0.6705882353);
+  background-color: transparent;
+  color: #191919;
+  cursor: pointer;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 20px;
+  }
+  .main .sobremi-nosotros {
+    padding-left: 18px;
+    padding-right: 90px;
+  }
+  .main .sobremi-sub {
+    padding-left: 25px;
+  }
+  .main .sobremi-p {
+    padding-left: 25px;
+    padding-right: 80px;
+  }
+  .main .button {
+    margin-left: 25px;
+  }
+}
+/* RESPONSIVE MOBILE */
+  @media screen and (max-width: 320px) {  
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    .main .img-sobre-mi {
+      width: 320px;
+      height: 120;
+      padding-top: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .main .sobremi-nosotros {
+      padding-left: 120px;
+    }
+    .main .sobremi-p {
+      padding-left: 130px;
+      font-size: 17px;
+    }
+    .main .sobremi-sub {
+      padding-left: 130px;
+    }
+    .main .button {
+      margin-left: 130px;
+    }
+
+}
+
+/* SERVICIOS */
+.servicios {
+  text-align: center;
+}
+.servicios h1 {
+  text-transform: uppercase;
+  font-size: 34px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #3498db;
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cen {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.servicio {
+  display: inline-block;
+  width: 50%;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.servicio:hover {
+  background: rgba(221, 221, 221, 0.514);
+}
+.servicio p {
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 18px;
+  font-weight: 500;
+}
+.servicio i {
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.servicio i h2 {
+  color: #3498db;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .servicio {
+    width: 50%;
+  }
+}
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 320px) {
+  .servicio {
+    width: 100%;
+  }
+}
+
+/* PRODUCTOS */
+.galeria {
+  background-color: white;
+  color: white;
+  padding-bottom: 7%;
+}
+.galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 350px;
+}
+.galeria img:hover {
+  border: 5px solid #191919;
+}
+
+.promos-productos {
+  color: #191919;
+  font-size: 24px;
+}
+
+.productosh1 {
+  color: #0084ff;
+  font-size: 45px;
+}
+
+ /* CONTACTO */
+.form-area {
+	padding-top: 7%;
+  padding-bottom: 25px;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.left {
+	background: rgba(12, 133, 214, 0.4666666667);
+	padding: 200px 98px;
+}
+.left h2 {
+	font-family: poppins;
+	color: #fff;
+	font-weight: 700;
+	font-size: 48px;
+}
+.left h2 span {
+	font-weight: 100;
+}
+.single-form{
+    background: #fff;
+}
+.right {
+	padding: 70px 100px;
+	position: relative;
+}
+.right i {
+	position: absolute;
+	font-size: 80px;
+	left: -27px;
+	top: 40%;
+	color: #fff;
+}
+.form-control {
+	border: 2px solid #000;
+}
+.right button {
+	border: none;
+	border-radius: 0;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.right button:hover{
+    background-color: #252525;
+}
+
+
+/* RESPONSIVE TABLET  */
+
+@media (min-width:768px) and (max-width:991px){
+    .right i {
+	top: -52px;
+	transform: rotate(90deg);
+	left: 50%;
+}
+}
+
+@media (max-width:767px){
+    .left {
+  padding: 90px 15px;
+  text-align: center;
+}
+.left h2 {
+  font-size: 25px;
+}
+.right {
+  padding: 25px;
+}
+.right i {
+  top: -52px;
+  transform: rotate(90deg);
+  left: 46%;
+}
+.right button {
+	width: 150px;
+	padding: 12px 0;
+  } 
+}
+
+/* FOOTER*/
+.footer {
+  background-color: #0a141d;
+}
+
+.grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.grupo-1 .box figure img {
+  width: 250px;
+}
+.box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  margin-right: 70px;
+  font-size: 20px;
+}
+.box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  margin-right: 70px;
+}
+.redsocial a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.redsocial:hover {
+  transition: 0.75s;
+  color: aqua;
+}
+
+.grupo-2 {
+  background-color: rgba(0, 116, 224, 0.3764705882);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #fff;
+}
+.grupo-2 .grupo-2 small {
+  font-size: 15px;
+  text-align: center;
+}
+
+.aquacolor {
+  color: white;
+}
+.aquacolor:hover {
+  transition: 0.75s;
+  color: aqua;
+}
+@media screen and (max-width:800px){
+  .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  .logofooter {
+    width: 175px;
+    padding-bottom: px;
+  } 
+}
+/*# sourceMappingURL=main.css.map */
